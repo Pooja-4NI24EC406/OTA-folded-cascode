@@ -1,16 +1,11 @@
 <h1> OTA-folded-cascode</h1>
 ### INTRODUCTION<br>
- The Folded Cascode Operational Transconductance Amplifier (OTA) plays a<br>
- crucial role in analog integrated circuit design, particularly for applications<br>
- demanding high gain, wide input range, and efficient power consumption. Unlike<br>
- conventional OTA topologies such as the telescopic cascode, which suffer from<br>
- limited input and output swing under low supply voltages, the folded cascode<br>
- architecture employs a current folding technique using complementary transistors,<br>
- alowing for a greater signal swing while preserving a high output impedance. This<br>
- design feature makes the folded cascode OTA highly suitable for low-voltage<br>
- CMOS technologies, including the 180nm process node, where headroom<br>
- constraints are significant.<br>
- A folded cascode is a type of electronic circuit configuration that combines a cascode amplifier with a folded structure, providing high gain, high output impedance, and improved <br>stability. It's used to enhance performance in analog circuits.<br>
+ The Folded Cascode Operational Transconductance Amplifier (OTA) plays a crucial role in analog integrated circuit design, particularly for applications<br>
+ demanding high gain, wide input range, and efficient power consumption. Unlike conventional OTA topologies such as the telescopic cascode, which suffer from<br>
+ limited input and output swing under low supply voltages, the folded cascode architecture employs a current folding technique using complementary transistors,<br>
+ alowing for a greater signal swing while preserving a high output impedance. This design feature makes the folded cascode OTA highly suitable for low-voltage<br>
+ CMOS technologies, including the 180nm process node, where headroom constraints are significant.<br>
+ A folded cascode is a type of electronic circuit configuration that combines a cascode amplifier with a folded structure, providing high gain, high output impedance, and improves stability. It's used to enhance performance in analog circuits.<br>
 
 ### ABBREVIATIONS AND ACRONYMS DESIGN EQUATION<br>
  OTA- Operational Transconductance Amplifier<br>
@@ -30,12 +25,9 @@
 
 
 ### DESIGN QUESTION WITH EQUATION<br>
- Design a single-stage folded-cascode operational amplifier using 180nm CMOS
- technology with a ±0.9V supply (1.8V total). The amplifier should use an NMOS
- differential input pair for improved common-mode range and an actively biased
- PMOS cascode load to achieve high gain. The design must target a DC gain
- of at least 50 dB, consume approximately 0.35 mW power. The tail current
- should be around 10 µA and maximum output swing=1.6V
+ Design a single-stage folded-cascode operational amplifier using 180nm CMOS technology with a ±0.9V supply (1.8V total). The amplifier should use an NMOS<br>
+ differential input pair for improved common-mode range and an actively biased PMOS cascode load to achieve high gain. The design must target a DC gain<br>
+ of at least 50 dB, consume approximately 0.35 mW power. The tail current should be around 10 µA and maximum output swing=1.6V<br>
 
  Given,<br>
 maximum output swing ,<br>
@@ -95,49 +87,49 @@ Id = 1/2•unCox(W/L)Vov^2<br>
 
 ###  SIMULATION RESULT<br>
 
- 1.DC ANALYSIS:
+ 1.DC ANALYSIS:<br>
  
 ![image](https://github.com/user-attachments/assets/6cbd8393-1644-438d-90cd-998d36c0fac9)
 
 
- 2 Transient analysis:
+ 2 Transient analysis:<br>
 
  ![image](https://github.com/user-attachments/assets/0412792f-04d1-485f-94ca-0d839e736584)
 
- As vin common mode is 0.9V
- Vout = 500mV ( which is nearest to 0V )
+ As vin common mode is 0.9V<br>
+ Vout = 500mV ( which is nearest to 0V )<br>
 
- B.Differential mode analysis
- Vin ,
+ B.Differential mode analysis<br>
+ Vin ,<br>
 
 ![image](https://github.com/user-attachments/assets/0c4e64b2-6b8c-4c95-99ec-432dac12af94)
 
- Vout,
+ Vout,<br>
 
  ![image](https://github.com/user-attachments/assets/aef59323-f019-4da3-b248-c1c14994ab58)
 
- Voutmin (calculated) = Vb1 + Vov5 = 1+0.2 = 1.2V
- VoutMax(calculated) = Vdd-Vov7 = 1.8-0.3 = 1.5V
- and
- Vinmin(calculated) = Vss +Vtn+Vov1 = 0+0.45+0.2 = 0.65V
- Vinmax(calculated)= Vb1-Vtn+Vov5 = 1-0.45+0.2 = 0.75V
- Here in simulation
- We got Voutmax=1.3V
- Voutmin= 0.9V
- Vinmin=0.5V
- Vinmax= 0.8V
+ Voutmin (calculated) = Vb1 + Vov5 = 1+0.2 = 1.2V<br>
+ VoutMax(calculated) = Vdd-Vov7 = 1.8-0.3 = 1.5V<br>
+ and<br>
+ Vinmin(calculated) = Vss +Vtn+Vov1 = 0+0.45+0.2 = 0.65V<br>
+ Vinmax(calculated)= Vb1-Vtn+Vov5 = 1-0.45+0.2 = 0.75V<br>
+ Here in simulation<br>
+ We got Voutmax=1.3V<br>
+ Voutmin= 0.9V<br>
+ Vinmin=0.5V<br>
+ Vinmax= 0.8V<br>
 
-  3.AC Analysis
+  3.AC Analysis<br>
 
 ![image](https://github.com/user-attachments/assets/1e5c47c0-d8bb-4725-a93f-7f7e4afdb8d3)
 
- Av(dB) = 31dB
- Therefore, Vout/Vin = 35.48V/V
- CMRR = 20log (Adm/Acm)
- Adm = 35.48V/V
- Acm = 1V/V
- Therefore
- CMRR = 97dB
+ Av(dB) = 31dB<br>
+ Therefore, Vout/Vin = 35.48V/V<br>
+ CMRR = 20log (Adm/Acm)<br>
+ Adm = 35.48V/V<br>
+ Acm = 1V/V<br>
+ Therefore<br>
+ CMRR = 97dB<br>
 
  
  ### TESTING & VERIFICATION<br>
@@ -150,47 +142,32 @@ Id = 1/2•unCox(W/L)Vov^2<br>
 
  
  ###  RESULTS<br>
- The designed folded cascode operational amplifier with cascode PMOS loads
- was simulated with a 1.8 V supply and a 10µA bias current, splitting into 5µA
+ The designed folded cascode operational amplifier with cascode PMOS loads was simulated with a 1.8 V supply and a 10µA bias current, splitting into 5µA
  per branch. Overdrive voltages were 0.2 V for M3/M5 and 0.3 V for M7-M10.<br>
- Bias voltages (VB1 to VB4) were carefuly tuned to keep al MOSFETs in
- saturation. Used diode connected mosfet instead of m3 to keep that in
+ Bias voltages (VB1 to VB4) were carefuly tuned to keep al MOSFETs in saturation. Used diode connected mosfet instead of m3 to keep that in
  saturation<br>
- The measured output swing was 1.6 V peak-to-peak, with a common-mode
- output voltage of around 0.9 V.<br<
- The gain is less than 55dB because of smal current and 180nm technology,
- supported by the high output resistance from the PMOS cascode loads<br>
+ The measured output swing was 1.6 V peak-to-peak, with a common-mode output voltage of around 0.9 V.<br>
+ The gain is less than 55dB because of smal current and 180nm technology,supported by the high output resistance from the PMOS cascode loads<br>
   
  ### CONCLUSION<br>
- The Folded Cascode Operational Amplifier offers an excelent balance
- between high gain, wide output swing, and low power consumption, making it
- highly suitable for modern analog integrated circuit applications. Its architecture
- alows the use of NMOS input differential pairs while maintaining a low supply
- voltage, thanks to the folded configuration. The inclusion of cascode PMOS
- loads further enhances gain and output impedance without compromising linearity
- or stability. Overal, the folded cascode amplifier stands out as a robust, versatile
- design ideal for use in precision analog systems, sensor interfaces, and low-power biomedical electronics.
+ The Folded Cascode Operational Amplifier offers an excelent balance between high gain, wide output swing, and low power consumption, making it
+ highly suitable for modern analog integrated circuit applications. Its architecture alows the use of NMOS input differential pairs while maintaining a low supply
+ voltage, thanks to the folded configuration. The inclusion of cascode PMOS loads further enhances gain and output impedance without compromising linearity
+ or stability. Overal, the folded cascode amplifier stands out as a robust, versatile design ideal for use in precision analog systems, sensor interfaces, and low-power biomedical electronics.<br>
 
  ### INFERENCE <br>
- 1.Initial Output Issue:
- The output voltage was stuck at a low level (~0.4 mV instead of the expected
- ~0.8 V).
- This was due to improper biasing and incorrect Vds voltages for M5 and M6.
- 2. Current Mismatch in Branches:
- M3 and M4 initialy had much lower current than M5 and M6.Vx and Vy nodes
- were not providing enough voltage to turn M3 and M4 on properly.
- 3. W/L Ratio Tuning:
- The W/L ratios of M3, M4, M5, and M6 were adjusted to achieve the desired
- drain current (5 
-μA for M3/M4 and 10μA for M5/M6).PMOS and NMOS
+ 1.Initial Output Issue:<br>
+ The output voltage was stuck at a low level (~0.4 mV instead of the expected~0.8 V).<br>
+ This was due to improper biasing and incorrect Vds voltages for M5 and M6.<br>
+ 2. Current Mismatch in Branches:<br>
+ M3 and M4 initialy had much lower current than M5 and M6.Vx and Vy nodes were not providing enough voltage to turn M3 and M4 on properly.<br>
+ 3. W/L Ratio Tuning:<br>
+ The W/L ratios of M3, M4, M5, and M6 were adjusted to achieve the desired drain current (5μA for M3/M4 and 10μA for M5/M6).PMOS and NMOS
  devices were resized based on overdrive voltages (V<sub>ov</sub>) to match
- current requirements.
- 4. Bias Voltage Optimization:
- VB1 to VB4 values were tuned carefuly to bring al transistors into saturation.
- Particularly, M3 and M4 needed more headroom to come out of cutoff and
- operate properly.
- 5. Simulation Validation:
- Final DC simulation confirmed al branch currents were within 5 
-μA or 10μA as designed.
- Vout was correctly adjusted to 1.2V
+ current requirements.<br>
+ 4. Bias Voltage Optimization:<br>
+ VB1 to VB4 values were tuned carefuly to bring al transistors into saturation.Particularly, M3 and M4 needed more headroom to come out of cutoff and operate properly.<br>
+ 5. Simulation Validation:<br>
+ Final DC simulation confirmed al branch currents were within 5μA or 10μA as designed.<br>
+ Vout was correctly adjusted to 1.2V<br>
 
