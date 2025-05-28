@@ -1,4 +1,4 @@
-### OTA-folded-cascode
+<h1> OTA-folded-cascode</h1>
 <h2>INTRODUCTION</h2>
  The Folded Cascode Operational Transconductance Amplifier (OTA) plays a
  crucial role in analog integrated circuit design, particularly for applications
@@ -15,14 +15,14 @@
 <h2>ABBREVIATIONS AND ACRONYMS DESIGN EQUATION</h2>
  OTA- Operational Transconductance Amplifier<br>
  FC-OTA-Folded Cascode Operational Transconductance Amplifier<br>
- CMRR-Common-Mode Rejection Ratio
- ICMR -Input Common Mode Range
-  VDD - Positive Supply Voltage
- CMOS- Complementary Metal-Oxide-Semiconductor
- Vov- Overdrive Voltage
- gm -Transconductance
- ro - Output Resistance
- ID- Drain Current
+ CMRR-Common-Mode Rejection Ratio<br>
+ ICMR -Input Common Mode Range<br>
+  VDD - Positive Supply Voltage<br>
+ CMOS- Complementary Metal-Oxide-Semiconductor<br>
+ Vov- Overdrive Voltage<br>
+ gm -Transconductance<br>
+ ro - Output Resistance<br>
+ ID- Drain Current<br>
 
   ### CIRCUIT DIAGRAM<br>
   
