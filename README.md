@@ -1,5 +1,6 @@
 <h1> OTA-folded-cascode</h1>
-### INTRODUCTION<br>
+
+### INTRODUCTION <br>
  The Folded Cascode Operational Transconductance Amplifier (OTA) plays a crucial role in analog integrated circuit design, particularly for applications<br>
  demanding high gain, wide input range, and efficient power consumption. Unlike conventional OTA topologies such as the telescopic cascode, which suffer from<br>
  limited input and output swing under low supply voltages, the folded cascode architecture employs a current folding technique using complementary transistors,<br>
@@ -22,6 +23,8 @@
   ### CIRCUIT DIAGRAM<br>
   
 ![image](https://github.com/user-attachments/assets/b1ae6cdf-4e13-46df-8ad6-68240d2f1156)
+
+![image](https://github.com/user-attachments/assets/97bfa289-b904-4c7b-856e-ca98947a7970)
 
 
 ### DESIGN QUESTION WITH EQUATION<br>
@@ -89,12 +92,13 @@ Id = 1/2•unCox(W/L)Vov^2<br>
 
  1.DC ANALYSIS:<br>
  
-![image](https://github.com/user-attachments/assets/6cbd8393-1644-438d-90cd-998d36c0fac9)
-
+![image](https://github.com/user-attachments/assets/2c4b5c95-0cc5-42a5-bab0-2a3c288a705e)
 
  2 Transient analysis:<br>
+A.Common mode analysis<br>
 
- ![image](https://github.com/user-attachments/assets/0412792f-04d1-485f-94ca-0d839e736584)
+![image](https://github.com/user-attachments/assets/9e606c75-3f23-4884-9115-9c464082a687)
+
 
  As vin common mode is 0.9V<br>
  Vout = 500mV ( which is nearest to 0V )<br>
@@ -102,7 +106,10 @@ Id = 1/2•unCox(W/L)Vov^2<br>
  B.Differential mode analysis<br>
  Vin ,<br>
 
-![image](https://github.com/user-attachments/assets/0c4e64b2-6b8c-4c95-99ec-432dac12af94)
+![image](https://github.com/user-attachments/assets/8b2995e1-4239-42c7-9305-3dd70c364c4e)
+
+![image](https://github.com/user-attachments/assets/75f491b9-0800-4de4-bacc-c967f46c2e4d)
+
 
  Vout,<br>
 
@@ -121,7 +128,8 @@ Id = 1/2•unCox(W/L)Vov^2<br>
 
   3.AC Analysis<br>
 
-![image](https://github.com/user-attachments/assets/1e5c47c0-d8bb-4725-a93f-7f7e4afdb8d3)
+![image](https://github.com/user-attachments/assets/f83444d5-8f7a-4199-b7d6-44642f40c80b)
+
 
  Av(dB) = 31dB<br>
  Therefore, Vout/Vin = 35.48V/V<br>
