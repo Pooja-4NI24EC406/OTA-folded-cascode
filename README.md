@@ -1,4 +1,4 @@
-<h1> OTA-folded-cascode</h1>
+<h1> OTA - Folded cascode operational amplifier with cascode PMOS loads</h1>
 
 ### INTRODUCTION <br>
  The Folded Cascode Operational Transconductance Amplifier (OTA) plays a crucial role in analog integrated circuit design, particularly for applications<br>
