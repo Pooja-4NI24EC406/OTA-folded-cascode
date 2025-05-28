@@ -1,16 +1,16 @@
 <h1> OTA-folded-cascode</h1>
 ### INTRODUCTION<br>
- The Folded Cascode Operational Transconductance Amplifier (OTA) plays a
- crucial role in analog integrated circuit design, particularly for applications
- demanding high gain, wide input range, and efficient power consumption. Unlike
- conventional OTA topologies such as the telescopic cascode, which suffer from
- limited input and output swing under low supply voltages, the folded cascode
- architecture employs a current folding technique using complementary transistors,
- alowing for a greater signal swing while preserving a high output impedance. This
- design feature makes the folded cascode OTA highly suitable for low-voltage
- CMOS technologies, including the 180nm process node, where headroom
- constraints are significant.
- A folded cascode is a type of electronic circuit configuration that combines a cascode amplifier with a folded structure, providing high gain, high output impedance, and improved stability. It's used to enhance performance in analog circuits.<br>
+ The Folded Cascode Operational Transconductance Amplifier (OTA) plays a<br>
+ crucial role in analog integrated circuit design, particularly for applications<br>
+ demanding high gain, wide input range, and efficient power consumption. Unlike<br>
+ conventional OTA topologies such as the telescopic cascode, which suffer from<br>
+ limited input and output swing under low supply voltages, the folded cascode<br>
+ architecture employs a current folding technique using complementary transistors,<br>
+ alowing for a greater signal swing while preserving a high output impedance. This<br>
+ design feature makes the folded cascode OTA highly suitable for low-voltage<br>
+ CMOS technologies, including the 180nm process node, where headroom<br>
+ constraints are significant.<br>
+ A folded cascode is a type of electronic circuit configuration that combines a cascode amplifier with a folded structure, providing high gain, high output impedance, and improved <br>stability. It's used to enhance performance in analog circuits.<br>
 
 ### ABBREVIATIONS AND ACRONYMS DESIGN EQUATION<br>
  OTA- Operational Transconductance Amplifier<br>
