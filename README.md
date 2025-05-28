@@ -1,5 +1,5 @@
-# OTA-folded-cascode
-###Introduction<br>
+### OTA-folded-cascode
+<h2>INTRODUCTION</h2>
  The Folded Cascode Operational Transconductance Amplifier (OTA) plays a
  crucial role in analog integrated circuit design, particularly for applications
  demanding high gain, wide input range, and efficient power consumption. Unlike
@@ -12,7 +12,7 @@
  constraints are significant.
  A folded cascode is a type of electronic circuit configuration that combines a cascode amplifier with a folded structure, providing high gain, high output impedance, and improved stability. It's used to enhance performance in analog circuits.<br>
 
-  ### ABBREVIATIONS AND ACRONYMS DESIGN EQUATION<br>
+<h2>ABBREVIATIONS AND ACRONYMS DESIGN EQUATION</h2>
  OTA- Operational Transconductance Amplifier<br>
  FC-OTA-Folded Cascode Operational Transconductance Amplifier<br>
  CMRR-Common-Mode Rejection Ratio
@@ -24,7 +24,7 @@
  ro - Output Resistance
  ID- Drain Current
 
-  ###CIRCUIT DIAGRAM<br>
+  ### CIRCUIT DIAGRAM<br>
   
 ![image](https://github.com/user-attachments/assets/b1ae6cdf-4e13-46df-8ad6-68240d2f1156)
 
